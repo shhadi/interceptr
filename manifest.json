@@ -25,7 +25,7 @@
   },
   "options_page": "src/options_custom/index.html",
   "browser_action": {
-    "default_icon": "icons/icon19.png",
+    "default_icon": "icons/main_gray.png",
     "default_title": "Interceptr",
     "default_popup": "src/browser_action/browser_action.html"
   }
