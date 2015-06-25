@@ -14,16 +14,26 @@
   "permissions": [
     "activeTab",
     "webRequest",
+    "https://trello.com/*",
     "*://*/*"
   ],
   
-  "background": {
+  "background": {    
     "scripts": [
-      "src/bg/background.js"
+      "src/bg/background.js",
+      "src/common/hashSearch.js",
+      "src/common/interceptr.js",
+      "src/common/jquery-2.1.4.min.js",
+      "src/common/key.js",
+      "src/common/store.js",
+      "src/common/trello_client.js"
     ],
     "persistent": true
   },
-  "options_page": "src/options_custom/index.html",
+  "web_accessible_resources": [
+        "src/settings/index.html"
+  ],
+  "options_page": "src/settings/index.html",
   "browser_action": {
     "default_icon": "icons/icon48_gray.png",
     "default_title": "Interceptr",

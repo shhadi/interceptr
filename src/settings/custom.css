@@ -2,6 +2,22 @@
 // Add your own style rules here, not in css/main.css
 // or css/setting.css for easy updating reasons.
 */
+
+#trello_settings{
+  margin-right: 15px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+#disconnect{
+  display: none;
+}
+
+.group{
+  font-size:12pt;
+  font-weight: bold;
+}
+
 @font-face {
     font-family: trellicons;
     src: url(https://d78fikflryjgj.cloudfront.net/fonts/f44f00db419877cf8ed4ab381e25a2d5/trellicons.eot?#iefix) format('embedded-opentype'),url(https://d78fikflryjgj.cloudfront.net/fonts/4944553c40116a5d7608034c6fd5206c/trellicons.woff) format('woff'),url(https://d78fikflryjgj.cloudfront.net/fonts/ff8b015759b483297a76fdfea9fcdd79/trellicons.ttf) format('truetype');
@@ -9,12 +25,11 @@
     font-style: normal
 }
 
-.header-btn {
-		width: 200px;		
+.header-btn {	
+    padding:5px;		
 		background: #026aa7;		
     border-radius: 3px;
-    color: #f3f3f3;
-    display: block;    
+    color: #f3f3f3;    
     font-weight: 700;    
     line-height: 30px;    
     min-width: 30px;

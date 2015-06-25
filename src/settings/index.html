@@ -1,0 +1,78 @@
+<!--
+// Copyright (c) 2011 Frank Kohlhepp
+// https://github.com/frankkohlhepp/fancy-settings
+// License: LGPL v2.1
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="title"></title>
+        
+        <!-- Stylesheets -->
+        <link id="favicon" rel="icon" href="">
+        <link rel="stylesheet" href="lib/default.css" media="screen">
+        <link rel="stylesheet" href="css/main.css" media="screen">
+        <link rel="stylesheet" href="css/setting.css" media="screen">
+        <link rel="stylesheet" href="custom.css" media="screen">
+        
+        <!-- JavaScripts -->        
+        <script src="../common/store.js"></script>        
+
+        <!-- Trello Scripts -->
+        <script src="../common/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="../common/trello_client.js"></script>
+        <script src="../common/key.js"></script>        
+        <script src="../common/interceptr.js"></script>
+        <script src="../common/hashSearch.js"></script>
+        <script src="../common/store.js"></script>
+    </head>
+    <body class="no-select">
+        <div id="sidebar" class="fancy">
+            <img id="icon" src="icon.png" alt=""><h1 id="settings-label">Settings</h1>
+            <div id="tab-container">
+                <!-- <div id="search-container" class="tab">
+                    <input id="search" type="search" placeholder="">
+                </div> -->
+                <div class="tab active group">Trello</div>
+                <div class="tab group">General</div>
+            </div>
+        </div>
+        <div id="content">
+            <!-- <div id="search-result-container" class="tab-content">
+                <h2 id="search-label">Test</h2>
+            </div> -->
+            <div class="tab-content show">
+                <h2>Trello</h2>
+                <table class="setting group">
+                    <tr>
+                        <td class="setting group-name">Connect</td>
+                        <td class="setting group-content">
+                            <div id="connect" class="setting bundle">
+                                <div class="setting container">
+                                    <!-- Connect to trello image button -->
+                                    <form id='f' style="padding:10px 0px 0px 0px">
+                                        <a id="trello_connect_btn" class="header-btn header-boards js-boards-menu" title="View list of boards" href="#"><span class="header-btn-icon icon-lg icon-board light"></span><span class="header-btn-text">Connect to trello</span></a>
+
+                                        <b style='clear:both;height:1px;overflow:hidden;'>&nbsp;</b>
+                                    </form>
+                                </div>
+                            </div> 
+                            <div id="disconnect" class="setting bundle button">
+                                <div class="setting container button">
+                                    <label class="setting label button">Disconnect:</label>
+                                    <input id="revoke_access" class="setting element button" type="button" value="Revoke Access">
+                                    <br /><a id="trello_settings" target="_blank" href="#">Trello Settings</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-content">
+                <h2>General</h2>                
+            </div>
+        </div>
+        <script src="js/settings.js"></script>
+    </body>
+</html>
